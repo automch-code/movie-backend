@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  db:
+    container_name: database
+    image: postgres:15.2-alpine3.17
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=swiftlet5650
+      - POSTGRES_DB=movie_ticket_development
+    ports:
+      - 5432:5432
